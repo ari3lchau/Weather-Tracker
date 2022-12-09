@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+<body onload="getCurrentWeather()">
+    <div id="title-bar">TRACK CURRENT WEATHER</div>
+    <div class="container">
+        <div class="container1">  
+            <h1>Weather Tracker</h1>      
+            <input type="text" required id="location" placeholder="Enter location name..." value="toronto">
+            <button type="button" id="submit-btn"><span>search</span></button>   
+        </div>
+
+        <div class="container2">
+            <span id="weather">20</span><br>
+            <span id="location_holder" >Toronto</span><br>
+       
+            <div>
+                <img src="images/50d@2x.png" alt="weather Image" id="weather-image"><span id="des">It's cloudy outside</span><br>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div>
+                <label >Real Feel: </label>
+                <center><img src="images/temperatures.png" alt="real feel icon"></center>
+                <span id="real-feel">23</span><br>
+            </div>
+            <div>
+                <label >Humidity:</label>
+                <center><img src="images/humidity.png" alt="humidity icon"></center>
+                <span id="humidity">66%</span><br>
+            </div>
+            <div>
+                <label >Wind:</label>
+                <center><img src="images/wind.png" alt="wind icon"></center>
+                <span id="wind">6.2mps</span><br>
+            </div>
+            
+            <div>
+                <label >Air pressure:</label>
+                <center><img src="images/pressure.png" alt="wind icon"></center>
+                <span id="air-pressure">1013</span><br>
+            </div>
+            
+        </div>
+    </div>
+   
+   <footer>
+    <div>Powered by <a href="https://openweathermap.org/">OpenWeather</a></div>
+    <div>&copy; <b>Copyright</b> - Ariel Chau - August 2022</div>
+   </footer>
+
+    
+    
+    <script src="weather.js"></script>
+</body>
+</html>
